@@ -13,3 +13,12 @@ for letter in "Pramod kanifnath Kharade":
 
 print("There are {} vowels.".format(vowels))
 print("There are {} consonants.".format(consonants))
+
+
+students={"male":["Tom","charlie","Harry","Frank"],
+          "female":["Sarah","Huda","Samantha","Emily","Elizabeth"]
+          }
+for key in students.keys():
+    for name in students[key]:
+        if "y" in name:
+            print(name)
