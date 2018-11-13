@@ -35,7 +35,8 @@ class CSVReader:
                 yesterdays_price = yesterdays_row[-1]
 
                 daily_return = (todays_price - yesterdays_price) / yesterdays_price
-                writer.writerow([todays_date,daily_return])
+                formatted_date = todays_date.strftime("%m/%d/%Y")
+                writer.writerow([formatted_date,daily_return])
                 
                 
             
